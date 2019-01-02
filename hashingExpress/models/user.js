@@ -10,4 +10,4 @@ var mySchema = new Schema({
     }
 });
 
-module.exports = mongoose.model('User', mySchema , 'newProj');
+module.exports = mongoose.model('User', mySchema , 'newProj')
