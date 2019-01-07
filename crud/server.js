@@ -9,7 +9,11 @@ const AdminModel = require('./Models/Admin');
 
 app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({extended: true}));
+
+
 app.use('/',Admin);
+
+
 app.get('/Admin/Contact',function(req, res, next){
     AdminModel.find({}, (err, data) => {
         if (err){
